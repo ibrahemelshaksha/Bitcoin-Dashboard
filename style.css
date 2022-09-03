@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  text-transform: capitalize;
+  background-color: rgb(33, 33, 33);
+}
+
+.container {
+  display: flex;
+  background-color: white;
+}
+
+/* @media (max-width: 767px) {}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container .content {
+  width: 100%;
+} */
+
+/* start style nav-bar */
+.container .nav-bar {
+  background-color: rgb(13, 64, 198);
+  padding: 10px;
+  padding-top: 80px;
+  width: 3%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 40px;
+  color: white;
+}
+
+.container .nav-bar i {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.container .nav-bar i:active {
+  background-color: rgb(22, 82, 240);
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(121, 121, 121);
+  margin: 0;
+}
+
+/* end style nav-bar */
+.container .content {
+  width: 95%;
+}
+
+/* start style header */
+.container .content .header {
+  padding: 10px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.container .content .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: rgb(13, 64, 198);
+}
+
+.container .content .header .header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .content .header .balance {
+  display: flex;
+  gap: 40px;
+}
+
+.container .content .header .header-text .balance {
+  background-color: rgb(238, 242, 254);
+  padding: 5px 20px;
+  border-radius: 30px;
+  position: relative;
+  border: 1px solid rgb(238, 242, 254);
+}
+
+.container .content .header .header-text .balance::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.container .content .header .header-text .balance p {
+  z-index: 1;
+  font-weight: bold;
+}
+
+.container .content .header .header-text .balance p:first-child {
+  color: rgb(25, 84, 240);
+}
+
+.container .content .header .header-text .balance p:last-child {
+  color: rgb(157, 173, 197);
+}
+
+.container .content .header .header-text .balance p:first-child i {
+  margin-left: 10px;
+}
+
+.container .content .header .user-name {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content .header .header-text .user-name i {
+  color: rgb(25, 84, 240);
+}
+
+.container .content .header .header-text .user-name i:last-child {
+  color: rgb(157, 173, 197);
+}
+
+.container .content .header .header-text .user-name p {
+  color: rgb(157, 173, 197);
+  font-weight: bold;
+}
+
+/* end style header */
+/* end style content data */
+.container .content-data {
+  display: flex;
+  gap: 100px;
+}
+
+.container .content-data .col-data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.container .content-data .first {
+  margin-left: 50px;
+}
+
+.container .content-data .col-data .span {
+  display: flex;
+  gap: 30px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.container .content-data .col-data .span span {
+  width: 50%;
+  background-color: rgb(22, 82, 240);
+  font-size: 18px;
+  padding: 5px 0;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+}
+
+.container .content-data .col-data .span span:last-child {
+  background-color: rgb(255, 255, 255);
+  color: rgb(22, 82, 240);
+  border: 1px solid #eee;
+}
+
+.container .content-data .col-data .currency {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content-data .col-data .currency div:not([class]) {
+  background-color: rgb(242, 246, 254);
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.container .content-data .col-data .currency div {
+  display: flex;
+  gap: 350px;
+  border-radius: 5px;
+}
+
+.container .content-data .col-data .currency div:nth-child(6) {
+  gap: 331px;
+}
+
+.container .content-data .col-data .currency .row-text {
+  justify-content: space-between;
+}
+
+.container .content-data .col-data .currency .row-text p:first-child {
+  color: #aaa;
+}
+
+.container .content-data .col-data .currency .button {
+  background-color: teal;
+  padding: 8px 0px;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.container .content-data .col-data .currency .note {
+  text-align: justify;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+/* end style content data*/
+/* start style invoice data*/
+.container .content-data .secound {
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.container .content-data .secound div:not([class="invoice-user-info"]) {
+  display: flex;
+  gap: 300px;
+}
+
+.container .content-data .secound .invoice-user-info {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.container .content-data .secound .invoice-user-info div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container .content-data .secound .invoice-user-info div img {
+  width: 60px;
+  height: 60px;
+}
+
+.container .content-data .secound .invoice-user-info ul {
+  list-style: none;
+}
+
+.container .content-data .secound .invoice-user-info ul a {
+  color: rgb(22, 82, 240);
+  text-decoration: none;
+}
+
+.container .content-data .secound .invoice-user-info .seller ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container .content-data .secound .invoice-data {
+  background-color: rgb(242, 246, 254);
+  padding: 15px;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.container .content-data .secound .invoice-data:nth-child(2) {
+  color: rgb(22, 82, 240);
+  gap: 215px;
+}
+
+.container .content-data .secound .invoice-data:nth-child(3) {
+  gap: 200px;
+}
+
+.container .content-data .secound .invoice-data:nth-child(4) {
+  gap: 220px;
+}
+
+.container .content-data .secound .invoice-data:nth-child(6) {
+  gap: 290px;
+}
+
+.container .content-data .secound .invoice-data:nth-child(7) p:last-child {
+  color: tomato;
+}
+
+/* end style invoice data*/
